@@ -4,5 +4,6 @@ ADD . /app
 WORKDIR /app
 RUN sudo python setup.py install
 
-CMD ["youtube-dl-server"]
+ENTRYPOINT ["youtube-dl-server"]
+EXPOSE 9191
 
